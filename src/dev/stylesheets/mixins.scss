@@ -9,3 +9,14 @@
 		box-shadow: $top $left $blur $size $color;
 	}
 }
+
+@mixin circle($width, $color) {
+	text-align: center;
+	width: $width;
+	height: $width;
+	line-height:$width;
+	background: $color;
+	-webkit-border-radius: $width/2;
+	-moz-border-radius: $width/2;
+	border-radius: $width/2;
+}
