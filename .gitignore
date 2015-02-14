@@ -1,0 +1,3 @@
+/src/dev/vendor/*
+/node_modules/*
+/src/build/*
