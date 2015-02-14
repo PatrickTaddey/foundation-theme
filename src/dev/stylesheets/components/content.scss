@@ -1,6 +1,6 @@
 .content{
 	position: relative;
-	background-color: #fff;
+	background-color: $white;
 	margin-top:-40px;
 	padding-bottom: 40px;
 	margin-bottom:-40px;
@@ -8,7 +8,7 @@
 	@include box-shadow(0px,0px,10px,5px, rgba(0,0,0,0.2), false);	
 	.top-white-row {
 		height:40px;
-		background-color: #fff;
+		background-color: $white;
 	}
 	&:after {
 		content: "";
