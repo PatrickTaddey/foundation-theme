@@ -1,0 +1,27 @@
+h1, h2, h3, h4, h5, h6 { 
+	color:$primary-font-color;
+	&.title {
+		padding-left:20px;
+		position: relative;
+		text-align: left;
+		text-transform:uppercase;
+		font-family: Open Sans,"Helvetica Neue",Helvetica,Arial,sans-serif;
+		font-weight: 700;
+	}
+	&.title span {
+		background: #fff;
+		padding: 0 15px;
+		position: relative;
+		z-index: 1;
+	}
+	&.title:before {
+		background: #ebebeb;
+		content: "";
+		display: block;
+		height: 1px;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		width: 100%;
+	}
+}

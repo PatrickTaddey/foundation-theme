@@ -3,9 +3,8 @@
 @import "_settings.scss";
 @import "overrides/top-bar.scss";
 @import "../vendor/foundation/scss/foundation.scss";
-@import "components/mixins.scss";
+@import "mixins.scss";
+@import "components/typo.scss";
 @import "components/header.scss";
-
-body {
-	background-color: $background-color;
-}
+@import "components/content.scss";
+@import "components/footer.scss";
