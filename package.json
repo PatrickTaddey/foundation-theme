@@ -1,0 +1,47 @@
+{
+  "name": "foundation-theme",
+  "version": "0.0.1",
+  "homepage": "https://github.com/PatrickTaddey/foundation-theme",
+  "authors": [
+    "tooltonix@googlemail.com"
+  ],
+  "description": "foundation theme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PatrickTaddey/foundation-theme"
+  },
+  "author": "Patrick Taddey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PatrickTaddey/foundation-theme"
+  },
+  "homepage": "https://github.com/PatrickTaddey/foundation-theme",
+  "dependencies": {
+    "bower": "^1.3.12",
+    "browserify": "^7.0.0",
+    "browserify-shim": "^3.8.1",
+    "coffeeify": "^1.0.0",
+    "deamdify": "^0.1.1",
+    "debowerify": "^1.2.0",
+    "grunt": "^0.4.5",
+    "grunt-bower-task": "^0.4.0",
+    "grunt-browserify": "^3.2.1",
+    "grunt-browserify-bower": "^0.1.4",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-concat": "^0.5.0",
+    "grunt-contrib-connect": "^0.9.0",
+    "grunt-contrib-copy": "^0.7.0",
+    "grunt-contrib-cssmin": "^0.10.0",
+    "grunt-contrib-uglify": "^0.6.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-focus": "^0.1.1",
+    "grunt-sass": "^0.17.0"
+  },
+  "devDependencies": {
+    "load-grunt-tasks": "^0.6.0"
+  }
+}
