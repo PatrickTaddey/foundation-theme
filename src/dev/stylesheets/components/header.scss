@@ -1,0 +1,20 @@
+.header-top {
+	background-color: $header-top-background-color;
+	color: $header-top-color;
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+	.inline-list {
+		margin: 0px;
+	}
+	a {
+		color: $header-top-color;
+		font-size: 0.9rem;
+		&:hover {
+			color: $header-top-color-hover;
+		}
+	}
+}
+.parent-link.js-generated {
+	display:none !important;
+}
