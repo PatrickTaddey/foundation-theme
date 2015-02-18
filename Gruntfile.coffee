@@ -18,6 +18,11 @@ module.exports = (grunt) ->
 					sourcemap: true
 				files:
 					"src/build/stylesheets/app.css": "src/dev/stylesheets/app.scss"
+			release:
+				options:
+					outputStyle: "compressed"
+				files:
+					"src/release/stylesheets/app.min.css": "src/dev/stylesheets/app.scss"
 
 		connect:
 			build:
@@ -26,7 +31,11 @@ module.exports = (grunt) ->
 					port: 9000
 					base: "src/build"
 
-		clean: ["src/build"]
+		clean: 
+			build:
+				["app/build"]
+			release:
+				["app/release"]
 
 		copy:
 			build:
@@ -34,6 +43,14 @@ module.exports = (grunt) ->
 					{expand: true, cwd: "src/dev/vendor/components-font-awesome/fonts/", src: ["**"], dest: "src/build/fonts"}
 					{expand: true, cwd: "src/dev/images/", src: ["**"], dest: "src/build/images"}
 				]
+			release:
+				files: [
+					{expand: true, cwd: "src/dev/vendor/components-font-awesome/fonts/", src: ["**"], dest: "src/release/fonts"}
+					{expand: true, cwd: "src/dev/images/", src: ["**"], dest: "src/release/images"}
+				]
+		uglify:
+			release:
+				files: 'src/release/scripts/app.min.js': ['src/build/scripts/app.js']
 
 		watch:
 			build_html:
@@ -65,10 +82,18 @@ module.exports = (grunt) ->
 		require('load-grunt-tasks')(grunt)
 
 		grunt.registerTask "default", [
-			"clean",
+			"clean:build",
 			"browserify:app",
 			"sass:build",
 			"copy:build",
 			"connect:build",
 			"focus:build"
+		]
+
+		grunt.registerTask "release", [
+			"clean",
+			"browserify:app",
+			"sass:release",
+			"uglify:release",
+			"copy:release"
 		]
