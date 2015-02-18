@@ -1,16 +1,19 @@
 $white: #fff;
-$grey:#555;
+$grey: #555;
+$light-grey: #eee;
+$green: #045355;
 $primary-color:$white;
 
 $background-color: #f7f7f7;
+$body-font-color: $grey;
 
 $header-top-color:#999;
 $header-top-color-hover:#fff;
 $header-top-background-color:#444;
 
-$hover-background-color:#006567;
+$hover-background-color:$green;
 $top-bar-background-color:#fff;
 
 $footer-background-color: #222;
-$circle-background-color: #999;
-$footer-bottom-background-color: #006567;
+$circle-background-color: #777;
+$footer-bottom-background-color: $green;

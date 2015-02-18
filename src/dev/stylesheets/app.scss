@@ -1,8 +1,17 @@
+// we want to use the icons from font-awesome
 @import "../vendor/components-font-awesome/scss/font-awesome.scss";
+
+// have to import colors, settings & overrides before importing foundation stuff
+// ...because we have our own style & wanna ovveride it
 @import "colors.scss";
 @import "_settings.scss";
 @import "overrides/top-bar.scss";
+@import "overrides/typography.scss";
+
+// import some foundation stuff
 @import "../vendor/foundation/scss/foundation.scss";
+
+// import own components & mixins
 @import "mixins.scss";
 @import "components/typo.scss";
 @import "components/header.scss";

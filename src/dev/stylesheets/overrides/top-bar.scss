@@ -43,7 +43,7 @@ $topbar-dropdown-link-bg-hover: $hover-background-color;
 $topbar-dropdown-link-weight: bold;
 // $topbar-dropdown-toggle-size: 5px;
 $topbar-dropdown-toggle-color: $grey;
-// $topbar-dropdown-toggle-alpha: 0.4;
+$topbar-dropdown-toggle-alpha: 1;
 
 // $topbar-dropdown-label-color: $monsoon;
 // $topbar-dropdown-label-text-transform: uppercase;
@@ -78,3 +78,10 @@ $topbar-menu-icon-color-toggled: $grey;
 // $topbar-sticky-class: ".sticky";
 // $topbar-arrows: true; //Set false to remove the triangle icon from the menu item
 // $topbar-dropdown-arrows: true; //Set false to remove the \00bb >> text from dropdown subnavigation li// 
+
+.top-bar-section .active.has-dropdown > a:after {
+   border-color: rgb(255, 255, 255) transparent transparent;
+}
+.top-bar-section .has-dropdown > a:hover:after {
+   border-color: rgb(255, 255, 255) transparent transparent;
+}

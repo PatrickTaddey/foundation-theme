@@ -20,10 +20,10 @@
 }
 
 .header-background {
-	background-image: url("http://placehold.it/1600x150&text=Header");
+	background-image: url("http://placehold.it/1600x300&text=Header");
 	background-repeat: no-repeat;
-	background-position: top center;
-	height: 150px;
+	background-position: center center;
+	height: 300px;
 	background-size:cover;
 	position: relative;
 }
@@ -32,3 +32,8 @@
 	@include box-shadow(0px,0px,10px,5px, rgba(0,0,0,0.2), false);	
 }
 
+a.logo {
+	&:hover {
+		color:darken($grey, 20%) !important;
+	}
+}

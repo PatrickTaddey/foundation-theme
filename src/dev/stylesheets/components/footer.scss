@@ -13,6 +13,13 @@ footer {
 		font-weight:bold;
 		&:hover{
 			color: $white;
+			background-color: lighten($circle-background-color, 10%);
+		}
+	}
+	.inline-list li a {
+		color:$circle-background-color;
+		&:hover{
+			color: lighten($circle-background-color, 10%);
 		}
 	}
 }
