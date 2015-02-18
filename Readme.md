@@ -2,6 +2,7 @@ Simple Foundation Theme
 ============
 Based on Foundation 5.5.1
 
+
 Installation
 --------------
 #### clone repository
@@ -17,6 +18,11 @@ cd foundation-theme/
 npm install
 bower install
 
-# start development
+# start development in src/dev/* Folders
+# output is in src/build/*
 grunt build
+
+# start deployment
+# output is in src/release/* Folders
+grunt release
 ```
